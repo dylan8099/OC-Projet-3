@@ -149,6 +149,9 @@ header nav ul {
 header img {
   height: 22px;
 }
+header a {
+  text-decoration: none;
+}
 section {
   margin: 50px 0;
 }
@@ -210,11 +213,13 @@ footer nav ul li {
 }
 #introduction figure {
   flex: 1;
+  cursor: pointer;
 }
 #introduction img {
   display: block;
   margin: auto;
   width: 80%;
+  
 }
 
 #introduction article {
@@ -330,7 +335,6 @@ input[type="submit"] {
 .login {
 	text-decoration: none;
 	color: black;
-	font-weight: bold;
 }
 
 .login:hover {
@@ -344,6 +348,15 @@ input[type="submit"] {
 
 #section-login p {
 	text-align: center;
-  margin-bottom: 230px;
+    margin-bottom: 230px;
 }
-
+.connect-btn {
+  cursor: pointer;
+}
+.login-error {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  display:none;
+  margin-bottom: 30px;
+}
